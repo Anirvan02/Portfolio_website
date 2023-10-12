@@ -1,8 +1,9 @@
-var hamburger = document.querySelector(".hamb");
-var navlist = document.querySelector(".nav-list");
-var links = document.querySelector(".nav-list li")
+let navbar = document.querySelector('.header .navbar')
 
-hamburger.addEventListener("click",function(){
-    this.classList.toggle("click");
-    navlist.classList.toggle("open");
-});
+document.querySelector('#menu').onclick = () =>{
+  navbar.classList.add('active');
+}
+
+document.querySelector('#close').onclick = () =>{
+  navbar.classList.remove('active');
+}
