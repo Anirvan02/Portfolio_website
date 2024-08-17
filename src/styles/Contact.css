@@ -1,0 +1,127 @@
+.main-width-contact {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 2rem 9%;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/public/images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.contact-left{
+    flex-basis: 35%;   
+    margin-top: 40px;
+}
+.contact-right{
+    flex-basis: 60%;
+    margin-top: 40px
+}
+.contact-left h1{
+    color: white;
+    font-size: 47px;
+}
+.contact-left p {
+    color: white;
+    margin-top: 30px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-left p i {
+    color: #3947d7;
+    margin-right: 15px;
+    font-size: 30px;
+}
+.contact-left h1::after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 3px;
+    background-color: #3947d7;
+    margin-top: 10px;
+}
+.btn.btn2{
+    color: white;
+    display: inline-block;
+    background: #3947d7;
+    border: 2px solid #3947d7;
+    padding: 8px 30px;
+    border-radius: 10px;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border: 2px solid #3947d7;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.copyright{
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background: #262626;
+    font-weight: 300;
+    font-size: 16px;
+}
+.main-width-contact .btn.btn2:hover{
+    background: transparent;
+    border: 2px soid #3947d7;
+    color: #3947d7;
+    transition: .4s;
+}
+@media screen and (max-width: 930px) {
+    .main-width-contact{
+        padding: 2rem 6%;
+    }
+    .contact-left{
+        width: 100%;
+        flex-basis: 100%;
+    }
+    .contact-left h1{
+        font-size: 30px;
+    }
+    .contact-left p{
+        font-size: 15px;
+    }
+    .contact-left p i{
+        font-size: 20px;
+    }
+    .contact-right{
+        flex-basis: 100%;
+    }
+    .btn.btn2{
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 8px 26px;
+        font-size: 14px;
+    }
+    form input, form textarea {
+        font-size: 14px;
+    }
+    .copyright{
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,63 @@
+.contain {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/public/images/bginv.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem 9%;
+    justify-content: center; 
+}
+.about-me {
+    height: 100%;
+    width: 100%;
+    margin: 30px 0;
+    color: white;
+    padding: 25px;
+    background-color: #262626;
+    border: 3px solid #3947d7;
+    border-radius: 10px;
+}
+.about-me h2 {
+    font-size: 47px;
+    margin-bottom: 10px;
+}
+.about-me p {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.about-me h2::after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 3px;
+    background-color: #3947d7;
+    margin-top: 10px;
+}
+.about-me:hover {
+    background-color: #3947d7;
+    transition: .4s;
+}
+.about-me:hover h2::after {
+    background-color: #000000;
+}
+@media screen and (max-width: 930px) {
+    .contain {
+        justify-content: center;
+        padding: 2rem 6%;
+    }
+    .about-me{
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+    .about-me h2{
+        font-size: 30px;
+    }
+    .about-me p{
+        font-size: 14px;
+    }
+}
